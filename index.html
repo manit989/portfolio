@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>/dev/ - Manit Kumar | Minimalist Systems & AI Portfolio</title>
+  <meta name="description" content="Portfolio of Manit Kumar (anonusetux) - Computer Science Engineer, Distributed Systems, Edge AI & Offline RAG. 4chan & Basecoat UI aesthetic." />
+  <meta name="author" content="Manit Kumar" />
+  
+  <!-- Basecoat UI & Tailwind CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Favicon / 4chan Clover Icon SVG Data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍀</text></svg>" />
+</head>
+<body class="theme-yotsuba">
+
+  <!-- Top Sticky Board Navigation Bar -->
+  <nav class="board-nav" aria-label="Board Navigation">
+    <div class="flex items-center gap-1.5 flex-wrap">
+      <span class="font-bold text-xs">[ Boards:</span>
+      <a href="#op-post" class="font-bold">/dev/ - Portfolio</a>
+      <span>/</span>
+      <a href="#post-4861811">/exp/ - Army</a>
+      <span>/</span>
+      <a href="#post-4861812">/proj/ - Projects</a>
+      <span>/</span>
+      <a href="#post-4861814">/hack/ - Tinyfah</a>
+      <span>/</span>
+      <a href="#post-4861815">/dsa/ - LeetCode</a>
+      <span>/</span>
+      <a href="#post-4861816">/tech/ - Skills</a>
+      <span>]</span>
+    </div>
+
+    <div class="flex items-center gap-2 flex-wrap">
+      <button type="button" id="toggle-catalog-btn" class="font-bold">[ Catalog ]</button>
+      <a href="resume/resume.pdf" target="_blank" download="Manit_Kumar_Resume.pdf" class="font-bold" title="Download Resume PDF">[ Resume.pdf ]</a>
+      <button type="button" id="open-qr-btn">[ Post Reply ]</button>
+      <button type="button" id="toggle-sfx-btn" title="Toggle Sound Effects">[ SFX: OFF ]</button>
+      
+      <!-- Theme Switcher -->
+      <span class="text-xs text-muted-foreground">Style:</span>
+      <select id="theme-selector" class="text-xs bg-transparent border border-neutral-400 rounded px-1 py-0.5 cursor-pointer" aria-label="Select Theme">
+        <option value="theme-yotsuba">Yotsuba</option>
+        <option value="theme-yotsuba-b">Yotsuba B</option>
+        <option value="theme-tomorrow">Tomorrow (Dark)</option>
+      </select>
+
+      <a href="#bottom" class="text-xs font-mono">[ Bottom ]</a>
+    </div>
+  </nav>
+
+  <!-- Main Board Container -->
+  <main class="board-container">
+
+    <!-- Board Banner Header -->
+    <header class="board-header">
+      <div class="flex items-center justify-center gap-2 mb-1">
+        <span class="text-3xl" aria-hidden="true">🍀</span>
+        <h1 class="board-title">/dev/ - Manit Kumar</h1>
+      </div>
+      <p class="board-subtitle">Systems Architecture &bull; Edge AI & RAG &bull; Distributed Concurrency &bull; B.Tech CS @ GGSIPU</p>
+
+      <!-- Board Announcement / Notice Box -->
+      <div class="board-announcement">
+        <span class="warning-title">&bull; BOARD ANNOUNCEMENT &bull;</span><br />
+        Welcome to the portfolio board of <strong>Manit Kumar</strong> (Tripcode: <code>!anonusetux</code>).
+        Viewing in authentic imageboard mode styled with <strong>Basecoat UI</strong> &amp; <strong>Tailwind</strong>.<br />
+        <span class="text-xs opacity-80">Tip: Click screenshots to toggle inline zoom or inspect modal. Hover quote links (&gt;&gt;No.) to preview posts. Toggle [ Catalog ] for grid mode.</span>
+      </div>
+
+      <!-- Action Toolbar -->
+      <div class="board-toolbar">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="font-bold">Thread No. 4861810</span>
+          <span class="text-xs text-muted-foreground">| 8 Posts | 2 Images | Active</span>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <a href="mailto:manit17102006@gmail.com" class="btn" data-size="sm">
+            <span>✉ Email Me</span>
+          </a>
+          <a href="https://github.com/manit989" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+            <span>💻 GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/manit-kumar-a0a725325/" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+            <span>💼 LinkedIn</span>
+          </a>
+          <a href="https://codolio.com/profile/anonusetux" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+            <span>⚡ Codolio</span>
+          </a>
+          <a href="resume/resume.pdf" target="_blank" download class="btn btn-primary" data-size="sm">
+            <span>📄 Download Resume (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         CATALOG VIEW (Toggled via [ Catalog ] button)
+         ==================================================================== -->
+    <section id="catalog-section" class="catalog-view" aria-label="Catalog Grid View">
+      
+      <!-- Catalog Tile 0: Intro / OP -->
+      <article class="catalog-card" data-jump-to="op-post">
+        <div class="catalog-thumb-placeholder">
+          <div>
+            <strong>/dev/ OP</strong><br />
+            Manit Kumar<br />
+            B.Tech CS 9.0 CGPA
+          </div>
+        </div>
+        <div class="catalog-stats">R: 8 / I: 2</div>
+        <div class="catalog-subject">Manit Kumar: Software & Systems</div>
+        <div class="catalog-snippet">Undergrad at GGSIPU. High-concurrency backends, edge AI inference, Indian Army local RAG, competitive programming.</div>
+      </article>
+
+      <!-- Catalog Tile 1: Experience (Indian Army) -->
+      <article class="catalog-card" data-jump-to="post-4861811">
+        <div class="catalog-thumb-placeholder">
+          <div>
+            <strong>[EXPERIENCE]</strong><br />
+            Indian Army Intern<br />
+            Delhi Cantt.
+          </div>
+        </div>
+        <div class="catalog-stats">R: 2 / I: 0</div>
+        <div class="catalog-subject">Indian Army: Offline Local RAG</div>
+        <div class="catalog-snippet">100% offline RAG with FAISS + HuggingFace. LangChain predictive maintenance bridge with Ollama/Gemini SITREPs for tanks.</div>
+      </article>
+
+      <!-- Catalog Tile 2: FrameIQ Project -->
+      <article class="catalog-card" data-jump-to="post-4861812">
+        <img src="assets/frameiq.png" alt="FrameIQ thumbnail" class="catalog-thumb" loading="lazy" />
+        <div class="catalog-stats">R: 4 / I: 1</div>
+        <div class="catalog-subject">FrameIQ: Multimodal Video RAG</div>
+        <div class="catalog-snippet">FastAPI, LanceDB, Groq Whisper API, Gemini Flash scene decomposition, FFmpeg on-the-fly thumbnails. Sub-ms cosine search.</div>
+      </article>
+
+      <!-- Catalog Tile 3: ScaleGuard Project -->
+      <article class="catalog-card" data-jump-to="post-4861813">
+        <div class="catalog-thumb-placeholder">
+          <div>
+            <strong>[PROJECT]</strong><br />
+            ScaleGuard API<br />
+            Redis Lua Rate Limiting
+          </div>
+        </div>
+        <div class="catalog-stats">R: 3 / I: 0</div>
+        <div class="catalog-subject">ScaleGuard: Distributed API</div>
+        <div class="catalog-snippet">Atomic Token Bucket with Redis Lua scripting, Nginx load balancing across replicas, JWT auth, Locust stress testing.</div>
+      </article>
+
+      <!-- Catalog Tile 4: Tinyfah Hackathon -->
+      <article class="catalog-card" data-jump-to="post-4861814">
+        <img src="assets/tinyfah.png" alt="Tinyfah thumbnail" class="catalog-thumb" loading="lazy" />
+        <div class="catalog-stats">R: 3 / I: 1</div>
+        <div class="catalog-subject">1st Runner-Up AzinHack 2026</div>
+        <div class="catalog-snippet">Tinyfah: Autonomous web vulnerability audit agent with LangGraph & TinyFish API against 345 OWASP ASVS v5.0.0 checks.</div>
+      </article>
+
+      <!-- Catalog Tile 5: LeetCode & DSA -->
+      <article class="catalog-card" data-jump-to="post-4861815">
+        <div class="catalog-thumb-placeholder">
+          <div>
+            <strong>[DSA / CP]</strong><br />
+            LeetCode: 1815 Rating<br />
+            486 Solved
+          </div>
+        </div>
+        <div class="catalog-stats">R: 2 / I: 0</div>
+        <div class="catalog-subject">Competitive Programming</div>
+        <div class="catalog-snippet">486 LeetCode problems (308 Medium, 45 Hard), 56 contests across LeetCode, Codeforces & AtCoder (927 Max).</div>
+      </article>
+
+      <!-- Catalog Tile 6: Tech Skills Matrix -->
+      <article class="catalog-card" data-jump-to="post-4861816">
+        <div class="catalog-thumb-placeholder">
+          <div>
+            <strong>[TECH STACK]</strong><br />
+            Python, C++, Docker,<br />
+            Redis, FastApi, Neovim
+          </div>
+        </div>
+        <div class="catalog-stats">R: 1 / I: 0</div>
+        <div class="catalog-subject">Technical Skills Matrix</div>
+        <div class="catalog-snippet">Full breakdown of programming languages, backend frameworks, ML tooling, infra, databases, and dev workflows.</div>
+      </article>
+
+      <!-- Catalog Tile 7: Education -->
+      <article class="catalog-card" data-jump-to="post-4861817">
+        <div class="catalog-thumb-placeholder">
+          <div>
+            <strong>[EDUCATION]</strong><br />
+            GGSIPU Delhi<br />
+            B.Tech CS (9.0 CGPA)
+          </div>
+        </div>
+        <div class="catalog-stats">R: 1 / I: 0</div>
+        <div class="catalog-subject">GGSIPU B.Tech in CS</div>
+        <div class="catalog-snippet">Bachelor of Technology in Computer Science, 9.0/10.0 CGPA. Operating Systems, Distributed Systems, Algorithms.</div>
+      </article>
+
+    </section>
+
+    <!-- ====================================================================
+         THREAD VIEW (Standard 4chan chronological post flow)
+         ==================================================================== -->
+    <div id="thread-section" class="thread-view">
+
+      <!-- ================================================================
+           POST 0 (OP): Manit Kumar Intro & Overview
+           ================================================================ -->
+      <article class="op-card" id="op-post" data-post-id="4861810">
+        
+        <!-- Post Header -->
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[OP] Manit Kumar - Software Engineer &amp; Systems Architect</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-capcode">OP</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:37:23</span>
+          <a href="#op-post" class="post-num" data-num="4861810">No. 4861810</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861810">[Reply]</button>
+        </div>
+
+        <!-- File Header -->
+        <div class="file-info">
+          File: <a href="resume/resume.pdf" target="_blank" download>resume.pdf</a> (113 KB, 179 lines, LaTeX ATS-compliant) 
+          [<a href="resume/resume.pdf" target="_blank">View PDF</a>] 
+          [<a href="resume/resume.tex" target="_blank">View Source .tex</a>]
+        </div>
+
+        <div class="post-content mt-2">
+          <!-- Greentext Intro -->
+          <div class="mb-3">
+            <span class="greentext">&gt; be me, 3rd year Computer Science undergrad at Guru Gobind Singh Indraprastha University (GGSIPU)</span>
+            <span class="greentext">&gt; maintaining a 9.0 / 10.0 CGPA while shipping real-world systems</span>
+            <span class="greentext">&gt; engineered 100% offline edge RAG &amp; SITREP diagnostic pipelines as intern at Indian Army (Delhi Cantt.)</span>
+            <span class="greentext">&gt; built FrameIQ: zero-copy multimodal Video-RAG search engine with LanceDB, Groq LPU &amp; Gemini Flash</span>
+            <span class="greentext">&gt; built ScaleGuard: distributed auth &amp; atomic token-bucket rate limiter via Redis Lua scripting</span>
+            <span class="greentext">&gt; secured 1st Runner-Up at AzinHack 2026 (2nd out of 250+ teams) building Tinyfah autonomous security agent</span>
+            <span class="greentext">&gt; solved 486 DSA problems (308 Medium, 45 Hard) on LeetCode with 1815 Max Rating</span>
+            <span class="greentext">&gt; daily driver: Linux, Neovim, Python, FastAPI, Docker, C++, Redis</span>
+            <span class="greentext">&gt; ready to build resilient, ultra-fast software</span>
+          </div>
+
+          <!-- Quick Specs & Contact Card using Basecoat UI -->
+          <div class="card p-3 my-3">
+            <header class="flex items-center justify-between pb-2 mb-2 border-b border-subtle">
+              <span class="font-bold text-xs uppercase tracking-wider text-muted-foreground">Direct Comm Links &amp; Verified Identifiers</span>
+              <span class="badge" data-variant="outline">Available for Roles</span>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold w-16">Email:</span>
+                <a href="mailto:manit17102006@gmail.com" class="font-mono text-blue-600 hover:underline">manit17102006@gmail.com</a>
+                <button type="button" class="copy-btn" data-clipboard="manit17102006@gmail.com" title="Copy email">Copy</button>
+                <span class="copy-feedback">Copied!</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold w-16">Phone:</span>
+                <span class="font-mono">+91 8800-688-629</span>
+                <button type="button" class="copy-btn" data-clipboard="+918800688629" title="Copy phone">Copy</button>
+                <span class="copy-feedback">Copied!</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold w-16">GitHub:</span>
+                <a href="https://github.com/manit989" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-600 hover:underline">github.com/manit989</a>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold w-16">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/manit-kumar-a0a725325/" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-600 hover:underline">linkedin.com/in/manit-kumar</a>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold w-16">Codolio:</span>
+                <a href="https://codolio.com/profile/anonusetux" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-600 hover:underline">codolio.com/profile/anonusetux</a>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold w-16">Location:</span>
+                <span>Delhi, India &bull; Remote &bull; Hybrid</span>
+              </div>
+            </section>
+          </div>
+
+          <!-- Backlinks to replies -->
+          <div class="post-backlinks">
+            <span>Replies to this thread:</span>
+            <a href="#post-4861811" class="quote-link" data-preview="4861811">&gt;&gt;4861811 (Army)</a>
+            <a href="#post-4861812" class="quote-link" data-preview="4861812">&gt;&gt;4861812 (FrameIQ)</a>
+            <a href="#post-4861813" class="quote-link" data-preview="4861813">&gt;&gt;4861813 (ScaleGuard)</a>
+            <a href="#post-4861814" class="quote-link" data-preview="4861814">&gt;&gt;4861814 (Tinyfah)</a>
+            <a href="#post-4861815" class="quote-link" data-preview="4861815">&gt;&gt;4861815 (DSA/CP)</a>
+            <a href="#post-4861816" class="quote-link" data-preview="4861816">&gt;&gt;4861816 (Skills)</a>
+            <a href="#post-4861817" class="quote-link" data-preview="4861817">&gt;&gt;4861817 (Education)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 1: Indian Army Experience
+           ================================================================ -->
+      <article class="reply-post" id="post-4861811" data-post-id="4861811">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[EXPERIENCE] Indian Army Internship: Offline RAG &amp; Edge Diagnostic SITREPs</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:39:10</span>
+          <a href="#post-4861811" class="post-num" data-num="4861811">No. 4861811</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861811">[Reply]</button>
+        </div>
+
+        <div class="post-content">
+          <div class="text-xs mb-2 flex items-center gap-2 flex-wrap">
+            <span class="badge">Delhi Cantt.</span>
+            <span class="badge">June 2026 &ndash; August 2026</span>
+            <span class="badge">Role: Intern</span>
+            <span class="badge">FAISS</span>
+            <span class="badge">HuggingFace all-MiniLM-L6-v2</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">XGBoost / Random Forest</span>
+            <span class="badge">Ollama / Gemini</span>
+          </div>
+
+          <p class="mb-2">
+            <a href="#op-post" class="quote-link" data-preview="4861810">&gt;&gt;4861810 (OP)</a>
+          </p>
+          
+          <div class="mb-3">
+            <span class="greentext">&gt; stationed at Delhi Cantt. engineering division</span>
+            <span class="greentext">&gt; mission: combat units in forward defense lines operate with zero external WAN connectivity</span>
+            <span class="greentext">&gt; mechanics needed immediate semantic querying of hundreds of dense tank maintenance manuals</span>
+            <span class="greentext">&gt; engineered 100% offline local RAG pipeline using FAISS vector indexing &amp; HuggingFace all-MiniLM-L6-v2 embeddings</span>
+            <span class="greentext">&gt; reduced diagnostic manual lookup time by 90% without risking any data leakage or network dependency</span>
+            <span class="greentext">&gt; architected AI diagnostic pipeline via LangChain bridging edge-deployed predictive maintenance models (XGBoost &amp; Random Forest)</span>
+            <span class="greentext">&gt; integrated local LLMs (Gemini / Ollama) to translate raw mechanical sensor error codes into concise, plain-English Situation Reports (SITREPs)</span>
+            <span class="greentext">&gt; operators received actionable maintenance directives in seconds instead of flipping pages under battlefield pressure</span>
+          </div>
+
+          <div class="post-backlinks">
+            <span>Referenced by:</span>
+            <a href="#post-4861812" class="quote-link" data-preview="4861812">&gt;&gt;4861812</a>
+            <a href="#post-4861816" class="quote-link" data-preview="4861816">&gt;&gt;4861816</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 2: Featured Project 1 - FrameIQ
+           ================================================================ -->
+      <article class="reply-post" id="post-4861812" data-post-id="4861812">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[PROJECT] FrameIQ: Multimodal Semantic Video Search Engine</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:42:01</span>
+          <a href="#post-4861812" class="post-num" data-num="4861812">No. 4861812</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861812">[Reply]</button>
+        </div>
+
+        <!-- File Details for Attached Screenshot -->
+        <div class="file-info">
+          File: <a href="assets/frameiq.png" target="_blank">frameiq.png</a> (984 KB, 1884x890, Multimodal Search Dashboard)
+          [<button type="button" class="inspect-btn text-blue-600 underline" data-img="assets/frameiq.png" data-title="FrameIQ - Multimodal Semantic Video Search Engine">Expand Modal</button>]
+          [<a href="https://github.com/manit989/FrameIQ-minimal" target="_blank" rel="noopener noreferrer">GitHub Repo</a>]
+        </div>
+
+        <div class="media-container">
+          <!-- Thumbnail with click-to-expand -->
+          <div class="post-thumb-wrapper" title="Click to toggle inline expansion">
+            <img 
+              src="assets/frameiq.png" 
+              alt="FrameIQ Multimodal Search Engine Interface" 
+              class="post-thumb inline-expandable" 
+              loading="lazy" 
+            />
+            <span class="expand-badge">[Click to Expand]</span>
+          </div>
+
+          <!-- Description and greentext -->
+          <div class="post-content">
+            <div class="text-xs mb-2 flex items-center gap-1.5 flex-wrap">
+              <span class="badge">FastAPI</span>
+              <span class="badge">LanceDB</span>
+              <span class="badge">Groq LPU (Whisper API)</span>
+              <span class="badge">Gemini Flash</span>
+              <span class="badge">FFmpeg</span>
+              <span class="badge">Pydantic</span>
+              <span class="badge">Sep. 2026</span>
+            </div>
+
+            <p class="mb-2">
+              <a href="#post-4861811" class="quote-link" data-preview="4861811">&gt;&gt;4861811</a>
+            </p>
+
+            <div class="mb-3">
+              <span class="greentext">&gt; problem: millions of short-form videos uploaded every hour with garbage titles, misleading tags, or zero captions</span>
+              <span class="greentext">&gt; traditional keyword search completely fails to locate exact moments inside video files</span>
+              <span class="greentext">&gt; built FrameIQ: cross-modal Video-RAG search engine for moment-level semantic retrieval</span>
+              <span class="greentext">&gt; architected dual-stream ingestion pipeline:</span>
+              <span class="greentext">&gt; Stream A: Groq Whisper API for high-speed audio tokenization and timestamp alignment</span>
+              <span class="greentext">&gt; Stream B: Gemini Flash for visual scene decomposition, strictly validated with Pydantic schemas to prevent hallucinations</span>
+              <span class="greentext">&gt; implemented zero-copy columnar indexing with LanceDB + Gemini multimodal embeddings</span>
+              <span class="greentext">&gt; sub-millisecond cosine similarity search over vector stores</span>
+              <span class="greentext">&gt; dynamic FFmpeg thumbnail generator creates precision preview frames at exact second marks</span>
+            </div>
+
+            <div class="flex items-center gap-2 mt-2">
+              <a href="https://github.com/manit989/FrameIQ-minimal" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+                <span>View Source Code on GitHub &rarr;</span>
+              </a>
+            </div>
+
+            <div class="post-backlinks">
+              <span>Referenced by:</span>
+              <a href="#post-4861813" class="quote-link" data-preview="4861813">&gt;&gt;4861813</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 3: Featured Project 2 - ScaleGuard
+           ================================================================ -->
+      <article class="reply-post" id="post-4861813" data-post-id="4861813">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[PROJECT] ScaleGuard: Distributed Auth &amp; Rate-Limiting API</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:45:30</span>
+          <a href="#post-4861813" class="post-num" data-num="4861813">No. 4861813</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861813">[Reply]</button>
+        </div>
+
+        <div class="post-content">
+          <div class="text-xs mb-2 flex items-center gap-1.5 flex-wrap">
+            <span class="badge">FastAPI</span>
+            <span class="badge">Redis Lua Scripting</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Nginx</span>
+            <span class="badge">Docker Compose</span>
+            <span class="badge">Locust</span>
+            <span class="badge">Alembic</span>
+            <span class="badge">Feb. 2026</span>
+          </div>
+
+          <p class="mb-2">
+            <a href="#post-4861812" class="quote-link" data-preview="4861812">&gt;&gt;4861812</a>
+          </p>
+
+          <div class="mb-3">
+            <span class="greentext">&gt; needed a battle-tested rate limiter and auth gateway that doesn't collapse under sudden traffic bursts</span>
+            <span class="greentext">&gt; developed a distributed backend system using FastAPI and Nginx reverse proxy</span>
+            <span class="greentext">&gt; scaled horizontal replicas behind round-robin load balancing to absorb high concurrency</span>
+            <span class="greentext">&gt; engineered atomic Token Bucket Rate Limiter using custom Redis Lua scripting</span>
+            <span class="greentext">&gt; executed atomic token refills and withdrawals directly in Redis memory to eliminate race conditions between cluster nodes</span>
+            <span class="greentext">&gt; designed stateless JWT authentication pipeline with PostgreSQL and Alembic database migrations</span>
+            <span class="greentext">&gt; fully containerized 4-service stack orchestrated via Docker Compose</span>
+            <span class="greentext">&gt; stress-tested with Locust to simulate DDoS load spikes; verified zero request leakage beyond configured quotas</span>
+          </div>
+
+          <div class="flex items-center gap-2 mt-2">
+            <a href="https://github.com/manit989/scaleguard-api" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+              <span>View Source Code on GitHub &rarr;</span>
+            </a>
+          </div>
+
+          <div class="post-backlinks">
+            <span>Referenced by:</span>
+            <a href="#post-4861814" class="quote-link" data-preview="4861814">&gt;&gt;4861814</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 4: Hackathon Achievement - Tinyfah & Google Cloud
+           ================================================================ -->
+      <article class="reply-post" id="post-4861814" data-post-id="4861814">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[ACHIEVEMENT] 1st Runner-Up @ AzinHack 2026 (Tinyfah) &amp; GCP Diamond League</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:48:45</span>
+          <a href="#post-4861814" class="post-num" data-num="4861814">No. 4861814</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861814">[Reply]</button>
+        </div>
+
+        <!-- File Details for Attached Screenshot -->
+        <div class="file-info">
+          File: <a href="assets/tinyfah.png" target="_blank">tinyfah.png</a> (204 KB, 1875x891, Autonomous Vulnerability Audit Dashboard)
+          [<button type="button" class="inspect-btn text-blue-600 underline" data-img="assets/tinyfah.png" data-title="Tinyfah - Autonomous Web Security Audit Agent">Expand Modal</button>]
+          [<a href="https://github.com/Yashvardhan0904/Tinyfah" target="_blank" rel="noopener noreferrer">GitHub</a>]
+          [<a href="https://tinyfah.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>]
+        </div>
+
+        <div class="media-container">
+          <!-- Thumbnail with click-to-expand -->
+          <div class="post-thumb-wrapper" title="Click to toggle inline expansion">
+            <img 
+              src="assets/tinyfah.png" 
+              alt="Tinyfah Autonomous Vulnerability Auditor Dashboard" 
+              class="post-thumb inline-expandable" 
+              loading="lazy" 
+            />
+            <span class="expand-badge">[Click to Expand]</span>
+          </div>
+
+          <!-- Description and greentext -->
+          <div class="post-content">
+            <div class="text-xs mb-2 flex items-center gap-1.5 flex-wrap">
+              <span class="badge" data-variant="primary">1st Runner-Up (2nd / 250+ Teams)</span>
+              <span class="badge">AzinHack 2026</span>
+              <span class="badge">USAR GGSIPU</span>
+              <span class="badge">LangGraph</span>
+              <span class="badge">TinyFish API</span>
+              <span class="badge">OWASP ASVS v5.0.0</span>
+              <span class="badge">Oct. 2026</span>
+            </div>
+
+            <p class="mb-2">
+              <a href="#post-4861813" class="quote-link" data-preview="4861813">&gt;&gt;4861813</a>
+            </p>
+
+            <div class="mb-3">
+              <span class="greentext">&gt; entered 24-hour national hackathon AzinHack 2026 with 250+ teams across the country</span>
+              <span class="greentext">&gt; built Tinyfah: an autonomous agent for web application vulnerability discovery and compliance auditing</span>
+              <span class="greentext">&gt; engineered stateful agent orchestration using LangGraph cyclical graphs and TinyFish API</span>
+              <span class="greentext">&gt; automated 345 distinct OWASP ASVS v5.0.0 (Application Security Verification Standard) checks</span>
+              <span class="greentext">&gt; generated comprehensive security flaw matrices with automated reproduction steps</span>
+              <span class="greentext">&gt; evaluated by industry judges; took 1st Runner-Up out of 250+ teams</span>
+              <span class="greentext">&gt;</span>
+              <span class="greentext">&gt; also ranked in Diamond League (3337+ points) on Google Cloud Skills Boost</span>
+              <span class="greentext">&gt; earned production badges in Monitoring in Google Cloud, Cloud Speech API, App Engine, and Cloud Run Functions</span>
+            </div>
+
+            <div class="flex items-center gap-2 mt-2 flex-wrap">
+              <a href="https://github.com/Yashvardhan0904/Tinyfah" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+                <span>Tinyfah GitHub &rarr;</span>
+              </a>
+              <a href="https://tinyfah.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+                <span>Tinyfah Live Demo &rarr;</span>
+              </a>
+              <a href="https://unstop.com/hackathons/azinhack-2026-university-school-of-automation-robotics-usar-guru-gobind-singh-indraprastha-university-ggsipu--1763832" target="_blank" rel="noopener noreferrer" class="btn" data-size="sm">
+                <span>Hackathon Standings on Unstop &rarr;</span>
+              </a>
+            </div>
+
+            <div class="post-backlinks">
+              <span>Referenced by:</span>
+              <a href="#post-4861815" class="quote-link" data-preview="4861815">&gt;&gt;4861815</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 5: Competitive Programming & DSA
+           ================================================================ -->
+      <article class="reply-post" id="post-4861815" data-post-id="4861815">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[DSA/CP] Algorithmic Problem Solving &amp; Contest Track Record</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:51:12</span>
+          <a href="#post-4861815" class="post-num" data-num="4861815">No. 4861815</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861815">[Reply]</button>
+        </div>
+
+        <div class="post-content">
+          <p class="mb-2">
+            <a href="#post-4861814" class="quote-link" data-preview="4861814">&gt;&gt;4861814</a>
+          </p>
+
+          <div class="mb-3">
+            <span class="greentext">&gt; grinding algorithms since day one to master data structures, dynamic programming, and computational geometry</span>
+            <span class="greentext">&gt; solved 486 DSA problems on LeetCode (308 Medium, 45 Hard)</span>
+            <span class="greentext">&gt; achieved a Max Rating of 1815 on LeetCode</span>
+            <span class="greentext">&gt; completed 56 rated algorithmic programming contests across platforms</span>
+            <span class="greentext">&gt; Max Rating of 927 on AtCoder</span>
+            <span class="greentext">&gt; competitive handle: anonusetux (anon use tux)</span>
+          </div>
+
+          <!-- Basecoat UI Responsive Table -->
+          <div class="table-container my-3">
+            <table class="table" aria-label="Competitive Programming Statistics">
+              <thead>
+                <tr>
+                  <th>Platform</th>
+                  <th>Handle</th>
+                  <th>Problems Solved</th>
+                  <th>Max Rating</th>
+                  <th>Contests</th>
+                  <th>Verification Profile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-bold">LeetCode</td>
+                  <td><code>anonusetux</code></td>
+                  <td><strong>486</strong> (308 Med &bull; 45 Hard)</td>
+                  <td><span class="badge" data-variant="primary">1815 Max</span></td>
+                  <td>56 Contests</td>
+                  <td><a href="https://codolio.com/profile/anonusetux" target="_blank" rel="noopener noreferrer" class="quote-link">codolio/anonusetux &rarr;</a></td>
+                </tr>
+                <tr>
+                  <td class="font-bold">AtCoder</td>
+                  <td><code>anonusetux</code></td>
+                  <td>Contest Regular</td>
+                  <td><span class="badge">927 Max</span></td>
+                  <td>Active</td>
+                  <td><a href="https://codolio.com/profile/anonusetux" target="_blank" rel="noopener noreferrer" class="quote-link">Verified on Codolio &rarr;</a></td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Google Cloud</td>
+                  <td><code>Manit Kumar</code></td>
+                  <td>Hands-On Badges</td>
+                  <td><span class="badge">Diamond League</span></td>
+                  <td>3337+ Pts</td>
+                  <td>Cloud Monitoring, Speech, Run</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="post-backlinks">
+            <span>Referenced by:</span>
+            <a href="#post-4861816" class="quote-link" data-preview="4861816">&gt;&gt;4861816</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 6: Technical Skills Matrix
+           ================================================================ -->
+      <article class="reply-post" id="post-4861816" data-post-id="4861816">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[SKILLS] Technical Competencies &amp; Production Stack</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:53:40</span>
+          <a href="#post-4861816" class="post-num" data-num="4861816">No. 4861816</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861816">[Reply]</button>
+        </div>
+
+        <div class="post-content">
+          <p class="mb-2">
+            <a href="#post-4861815" class="quote-link" data-preview="4861815">&gt;&gt;4861815</a>
+          </p>
+
+          <div class="mb-3">
+            <span class="greentext">&gt; zero fluff, strictly production-grade tools and systems I build with daily:</span>
+          </div>
+
+          <!-- Basecoat Badges Categorized Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 my-2">
+            
+            <div class="card p-2.5">
+              <div class="font-bold text-xs mb-1.5 text-muted-foreground uppercase">1. Programming Languages</div>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge">Python (Expert)</span>
+                <span class="badge">C / C++</span>
+                <span class="badge">SQL</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Java</span>
+                <span class="badge">Lua</span>
+                <span class="badge">R</span>
+                <span class="badge">Bash / Shell</span>
+              </div>
+            </div>
+
+            <div class="card p-2.5">
+              <div class="font-bold text-xs mb-1.5 text-muted-foreground uppercase">2. Backend &amp; Distributed Systems</div>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge">FastAPI</span>
+                <span class="badge">Flask</span>
+                <span class="badge">Pydantic</span>
+                <span class="badge">SQLAlchemy</span>
+                <span class="badge">Alembic</span>
+                <span class="badge">RESTful APIs</span>
+                <span class="badge">Nginx</span>
+                <span class="badge">Rate Limiting</span>
+              </div>
+            </div>
+
+            <div class="card p-2.5">
+              <div class="font-bold text-xs mb-1.5 text-muted-foreground uppercase">3. Data Science &amp; GenAI / ML</div>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge">LangChain</span>
+                <span class="badge">LangGraph</span>
+                <span class="badge">HuggingFace</span>
+                <span class="badge">FAISS</span>
+                <span class="badge">NumPy</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">Matplotlib</span>
+                <span class="badge">Groq Whisper API</span>
+                <span class="badge">Gemini Flash</span>
+                <span class="badge">Ollama</span>
+              </div>
+            </div>
+
+            <div class="card p-2.5">
+              <div class="font-bold text-xs mb-1.5 text-muted-foreground uppercase">4. Databases, Infrastructure &amp; DevOps</div>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Redis (Lua scripting)</span>
+                <span class="badge">LanceDB (Vector)</span>
+                <span class="badge">Docker &amp; Compose</span>
+                <span class="badge">Git / GitHub Actions</span>
+                <span class="badge">Locust Load Testing</span>
+                <span class="badge">Linux Systems</span>
+              </div>
+            </div>
+
+            <div class="card p-2.5 md:col-span-2">
+              <div class="font-bold text-xs mb-1.5 text-muted-foreground uppercase">5. Developer Environment &amp; Cloud</div>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge">Neovim (Primary IDE)</span>
+                <span class="badge">Google Cloud Platform</span>
+                <span class="badge">Cloud Run</span>
+                <span class="badge">App Engine</span>
+                <span class="badge">Postman</span>
+                <span class="badge">FFmpeg</span>
+                <span class="badge">LaTeX</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="post-backlinks">
+            <span>Referenced by:</span>
+            <a href="#post-4861817" class="quote-link" data-preview="4861817">&gt;&gt;4861817</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 7: Education & Academic Standing
+           ================================================================ -->
+      <article class="reply-post" id="post-4861817" data-post-id="4861817">
+        <div class="post-header">
+          <input type="checkbox" title="Select post" />
+          <span class="post-subject">[EDUCATION] Guru Gobind Singh Indraprastha University (GGSIPU)</span>
+          <span class="post-author">Manit Kumar</span>
+          <span class="post-tripcode">!anonusetux</span>
+          <span class="post-id-tag">ID: 0xM4N1T</span>
+          <span class="post-date">10/31/26(Sat)11:55:00</span>
+          <a href="#post-4861817" class="post-num" data-num="4861817">No. 4861817</a>
+          <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="4861817">[Reply]</button>
+        </div>
+
+        <div class="post-content">
+          <p class="mb-2">
+            <a href="#post-4861816" class="quote-link" data-preview="4861816">&gt;&gt;4861816</a>
+          </p>
+
+          <div class="mb-3">
+            <span class="greentext">&gt; Institution: Guru Gobind Singh Indraprastha University (GGSIPU), Delhi, India</span>
+            <span class="greentext">&gt; Degree: Bachelor of Technology in Computer Science (B.Tech CS)</span>
+            <span class="greentext">&gt; Academic Performance: 9.0 / 10.0 CGPA</span>
+            <span class="greentext">&gt; Timeline: August 2024 &ndash; Present (Expected Graduation 2028)</span>
+            <span class="greentext">&gt; Core Coursework: Data Structures &amp; Algorithms, Database Systems, Computer Networks, Operating Systems, Theory of Computation, Discrete Mathematics</span>
+            <span class="greentext">&gt; Currently seeking summer/fall software engineering, backend systems, and AI infrastructure internships &amp; opportunities</span>
+          </div>
+
+          <div class="post-backlinks">
+            <span>Referenced by:</span>
+            <a href="#post-4861818" class="quote-link" data-preview="4861818">&gt;&gt;4861818</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================================================================
+           POST 8: Interactive Guestbook / Live Visitor Replies Container
+           ================================================================ -->
+      <div id="dynamic-replies-container"></div>
+
+      <!-- Quick Reply Docked Area at the bottom of thread -->
+      <div class="card p-4 mt-4 border border-dashed border-neutral-400" id="bottom-reply-box">
+        <header class="font-bold text-xs uppercase mb-2 text-muted-foreground flex items-center justify-between">
+          <span>[ Post a Reply to Thread No. 4861810 ]</span>
+          <span class="text-xs font-normal">Supports greentext with &gt; prefix</span>
+        </header>
+        <form id="inline-reply-form" class="flex flex-col gap-2">
+          <div class="flex gap-2 flex-wrap sm:flex-nowrap">
+            <input 
+              type="text" 
+              id="reply-name-input" 
+              placeholder="Name (default: Anonymous)" 
+              class="qr-input flex-1" 
+              maxlength="40" 
+            />
+            <input 
+              type="text" 
+              id="reply-subject-input" 
+              placeholder="Subject (e.g. Job Offer / Collaboration / Anon feedback)" 
+              class="qr-input flex-1" 
+              maxlength="60" 
+            />
+          </div>
+          <textarea 
+            id="reply-comment-input" 
+            placeholder="Comment (Write a message or greentext to Manit Kumar...)" 
+            class="qr-textarea" 
+            rows="3" 
+            required
+          ></textarea>
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center gap-2">
+              <label class="text-xs flex items-center gap-1 cursor-pointer">
+                <input type="checkbox" id="reply-sage-checkbox" />
+                <span title="Don't bump thread">sage</span>
+              </label>
+              <span class="text-xs text-muted-foreground">Stored locally in your browser</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button type="button" id="mailto-direct-btn" class="btn" data-size="sm">
+                ✉ Send as Direct Email
+              </button>
+              <button type="submit" class="btn btn-primary" data-size="sm">
+                Submit Post
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Board Footer -->
+    <footer class="board-footer" id="bottom">
+      <p class="mb-1">
+        🍀 /dev/ &bull; Minimalist Developer Portfolio of <strong>Manit Kumar</strong> (<code>anonusetux</code>)
+      </p>
+      <p class="text-xs opacity-75">
+        Built with semantic HTML, <strong>Basecoat UI</strong>, and <strong>Tailwind CSS</strong> &bull; Inspired by 4chan imageboard aesthetics &bull; All systems operational.
+      </p>
+      <p class="mt-2 text-xs">
+        <a href="#op-post" class="quote-link">[ Return to Top ]</a> &bull;
+        <a href="resume/resume.pdf" target="_blank" download class="quote-link">[ Download Resume ]</a> &bull;
+        <a href="https://github.com/manit989" target="_blank" rel="noopener noreferrer" class="quote-link">[ GitHub ]</a> &bull;
+        <a href="https://www.linkedin.com/in/manit-kumar-a0a725325/" target="_blank" rel="noopener noreferrer" class="quote-link">[ LinkedIn ]</a> &bull;
+        <a href="mailto:manit17102006@gmail.com" class="quote-link">[ Contact: manit17102006@gmail.com ]</a>
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- ====================================================================
+       FLOATING QUICK REPLY (QR) MODAL (4chan-style draggable floating widget)
+       ==================================================================== -->
+  <aside class="quick-reply-box" id="floating-qr" aria-label="Quick Reply Dialog">
+    <div class="qr-header" id="qr-drag-handle">
+      <span>Reply to No. 4861810</span>
+      <button type="button" class="qr-close-btn" id="qr-close-btn" aria-label="Close Quick Reply">&times;</button>
+    </div>
+    <form class="qr-body" id="floating-qr-form">
+      <input type="text" id="floating-name" placeholder="Name" class="qr-input" maxlength="40" />
+      <input type="text" id="floating-subject" placeholder="Subject" class="qr-input" maxlength="60" />
+      <textarea id="floating-comment" placeholder="Comment" class="qr-textarea" rows="4" required></textarea>
+      <div class="qr-actions">
+        <label class="text-xs flex items-center gap-1">
+          <input type="checkbox" id="floating-sage" />
+          <span>sage</span>
+        </label>
+        <div class="flex gap-1">
+          <button type="button" id="floating-email-btn" class="btn" data-size="sm">Email</button>
+          <button type="submit" class="btn btn-primary" data-size="sm">Post</button>
+        </div>
+      </div>
+    </form>
+  </aside>
+
+  <!-- ====================================================================
+       HOVER QUOTE PREVIEW POPUP
+       ==================================================================== -->
+  <div id="quote-preview-popup" role="tooltip" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       NATIVE HTML <dialog> MODAL FOR FULL-RESOLUTION SCREENSHOT INSPECT
+       ==================================================================== -->
+  <dialog class="image-dialog dialog" id="image-modal" aria-labelledby="modal-image-title">
+    <div class="modal-header">
+      <span id="modal-image-title">Screenshot Inspection</span>
+      <button type="button" class="btn" data-size="sm" onclick="document.getElementById('image-modal').close()">[ Close &times; ]</button>
+    </div>
+    <div class="modal-body">
+      <img id="modal-image-src" src="" alt="Full resolution view" />
+    </div>
+  </dialog>
+
+  <!-- ====================================================================
+       CLIENT SCRIPTS: Basecoat UI + 4chan Board Interactive Engine
+       ==================================================================== -->
+  <!-- Basecoat UI All-in-One JS (Optional for dropdowns / tabs if used) -->
+  <script src="https://cdn.jsdelivr.net/npm/basecoat-css@1.1.0/dist/js/all.min.js" defer></script>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // ----------------------------------------------------------------------
+      // Web Audio API Retro Sound Synthesizer (Optional, Toggleable)
+      // ----------------------------------------------------------------------
+      let sfxEnabled = false;
+      let audioCtx = null;
+
+      function playSound(type) {
+        if (!sfxEnabled) return;
+        try {
+          if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          const now = audioCtx.currentTime;
+          if (type === 'click') {
+            osc.frequency.setValueAtTime(600, now);
+            osc.frequency.exponentialRampToValueAtTime(150, now + 0.04);
+            gain.gain.setValueAtTime(0.08, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+            osc.start(now);
+            osc.stop(now + 0.04);
+          } else if (type === 'expand') {
+            osc.frequency.setValueAtTime(320, now);
+            osc.frequency.exponentialRampToValueAtTime(740, now + 0.08);
+            gain.gain.setValueAtTime(0.06, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+            osc.start(now);
+            osc.stop(now + 0.08);
+          } else if (type === 'post') {
+            osc.frequency.setValueAtTime(440, now);
+            osc.frequency.exponentialRampToValueAtTime(880, now + 0.12);
+            gain.gain.setValueAtTime(0.1, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+            osc.start(now);
+            osc.stop(now + 0.12);
+          }
+        } catch (e) {
+          console.warn('Audio effect failed', e);
+        }
+      }
+
+      const sfxBtn = document.getElementById('toggle-sfx-btn');
+      sfxBtn.addEventListener('click', function() {
+        sfxEnabled = !sfxEnabled;
+        sfxBtn.textContent = sfxEnabled ? '[ SFX: ON ]' : '[ SFX: OFF ]';
+        playSound('click');
+      });
+
+      // ----------------------------------------------------------------------
+      // Theme Switcher (Yotsuba, Yotsuba B, Tomorrow) with LocalStorage
+      // ----------------------------------------------------------------------
+      const themeSelector = document.getElementById('theme-selector');
+      const savedTheme = localStorage.getItem('manit_portfolio_theme') || 'theme-yotsuba';
+      document.body.className = savedTheme;
+      themeSelector.value = savedTheme;
+
+      themeSelector.addEventListener('change', function(e) {
+        const selected = e.target.value;
+        document.body.className = selected;
+        localStorage.setItem('manit_portfolio_theme', selected);
+        playSound('click');
+      });
+
+      // ----------------------------------------------------------------------
+      // Thread View <-> Catalog View Toggle
+      // ----------------------------------------------------------------------
+      const catalogBtn = document.getElementById('toggle-catalog-btn');
+      const catalogSection = document.getElementById('catalog-section');
+      const threadSection = document.getElementById('thread-section');
+      let isCatalogMode = false;
+
+      function setCatalogMode(enable) {
+        isCatalogMode = enable;
+        if (isCatalogMode) {
+          catalogSection.classList.add('active');
+          threadSection.style.display = 'none';
+          catalogBtn.textContent = '[ Thread View ]';
+        } else {
+          catalogSection.classList.remove('active');
+          threadSection.style.display = 'flex';
+          catalogBtn.textContent = '[ Catalog ]';
+        }
+        playSound('click');
+      }
+
+      catalogBtn.addEventListener('click', function() {
+        setCatalogMode(!isCatalogMode);
+      });
+
+      // Clicking any card in catalog jumps to thread post
+      document.querySelectorAll('.catalog-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+          const targetId = card.getAttribute('data-jump-to');
+          setCatalogMode(false);
+          const targetElem = document.getElementById(targetId);
+          if (targetElem) {
+            targetElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            highlightPost(targetElem);
+          }
+        });
+      });
+
+      function highlightPost(elem) {
+        document.querySelectorAll('.reply-post, .op-card').forEach(function(p) {
+          p.classList.remove('highlight');
+        });
+        elem.classList.add('highlight');
+        setTimeout(function() {
+          elem.classList.remove('highlight');
+        }, 3000);
+      }
+
+      // ----------------------------------------------------------------------
+      // In-place Image Expansion & Modal Inspection
+      // ----------------------------------------------------------------------
+      document.querySelectorAll('.inline-expandable').forEach(function(img) {
+        img.addEventListener('click', function(e) {
+          e.stopPropagation();
+          img.classList.toggle('is-expanded');
+          const badge = img.parentElement.querySelector('.expand-badge');
+          if (badge) {
+            badge.textContent = img.classList.contains('is-expanded') ? '[Click to Shrink]' : '[Click to Expand]';
+          }
+          playSound('expand');
+        });
+      });
+
+      const modalDialog = document.getElementById('image-modal');
+      const modalSrc = document.getElementById('modal-image-src');
+      const modalTitle = document.getElementById('modal-image-title');
+
+      document.querySelectorAll('.inspect-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const src = btn.getAttribute('data-img');
+          const title = btn.getAttribute('data-title');
+          modalSrc.src = src;
+          modalTitle.textContent = title;
+          modalDialog.showModal();
+          playSound('expand');
+        });
+      });
+
+      // Close modal on backdrop click
+      modalDialog.addEventListener('click', function(e) {
+        if (e.target === modalDialog) {
+          modalDialog.close();
+        }
+      });
+
+      // ----------------------------------------------------------------------
+      // Floating Quick Reply (QR) Widget
+      // ----------------------------------------------------------------------
+      const openQrBtn = document.getElementById('open-qr-btn');
+      const floatingQr = document.getElementById('floating-qr');
+      const closeQrBtn = document.getElementById('qr-close-btn');
+
+      openQrBtn.addEventListener('click', function() {
+        floatingQr.classList.toggle('is-open');
+        if (floatingQr.classList.contains('is-open')) {
+          document.getElementById('floating-comment').focus();
+        }
+        playSound('click');
+      });
+
+      closeQrBtn.addEventListener('click', function() {
+        floatingQr.classList.remove('is-open');
+        playSound('click');
+      });
+
+      // ----------------------------------------------------------------------
+      // Quote Backlink Hover Previews
+      // ----------------------------------------------------------------------
+      const popup = document.getElementById('quote-preview-popup');
+
+      function setupQuoteHover(container) {
+        const links = container.querySelectorAll('.quote-link[data-preview]');
+        links.forEach(function(link) {
+          link.addEventListener('mouseenter', function(e) {
+            const postId = link.getAttribute('data-preview');
+            const targetPost = document.getElementById('post-' + postId) || (postId === '4861810' ? document.getElementById('op-post') : null);
+            if (targetPost) {
+              popup.innerHTML = targetPost.innerHTML;
+              popup.style.display = 'block';
+              updatePopupPos(e);
+            }
+          });
+
+          link.addEventListener('mousemove', function(e) {
+            updatePopupPos(e);
+          });
+
+          link.addEventListener('mouseleave', function() {
+            popup.style.display = 'none';
+            popup.innerHTML = '';
+          });
+
+          link.addEventListener('click', function(e) {
+            const postId = link.getAttribute('data-preview');
+            const targetPost = document.getElementById('post-' + postId) || (postId === '4861810' ? document.getElementById('op-post') : null);
+            if (targetPost) {
+              e.preventDefault();
+              targetPost.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              highlightPost(targetPost);
+              playSound('click');
+            }
+          });
+        });
+      }
+
+      function updatePopupPos(e) {
+        const x = Math.min(e.clientX + 16, window.innerWidth - 490);
+        const y = Math.min(e.clientY + 16, window.innerHeight - 300);
+        popup.style.left = Math.max(10, x) + 'px';
+        popup.style.top = Math.max(10, y) + 'px';
+      }
+
+      setupQuoteHover(document);
+
+      // Quote button click (fills QR with >>No.)
+      function setupQuoteButtons(container) {
+        container.querySelectorAll('.quote-btn').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            const num = btn.getAttribute('data-quote');
+            floatingQr.classList.add('is-open');
+            const textarea = document.getElementById('floating-comment');
+            textarea.value = (textarea.value ? textarea.value + '\n' : '') + '>>' + num + '\n';
+            textarea.focus();
+            playSound('click');
+          });
+        });
+      }
+      setupQuoteButtons(document);
+
+      // ----------------------------------------------------------------------
+      // Copy to Clipboard Buttons
+      // ----------------------------------------------------------------------
+      document.querySelectorAll('.copy-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const text = btn.getAttribute('data-clipboard');
+          navigator.clipboard.writeText(text).then(function() {
+            const feedback = btn.nextElementSibling;
+            if (feedback && feedback.classList.contains('copy-feedback')) {
+              feedback.style.display = 'inline';
+              setTimeout(function() {
+                feedback.style.display = 'none';
+              }, 2000);
+            }
+            playSound('click');
+          });
+        });
+      });
+
+      // ----------------------------------------------------------------------
+      // Real-time Guestbook / Visitor Replies (Stored in LocalStorage)
+      // ----------------------------------------------------------------------
+      const dynamicContainer = document.getElementById('dynamic-replies-container');
+      let visitorReplies = [];
+
+      try {
+        visitorReplies = JSON.parse(localStorage.getItem('manit_visitor_replies') || '[]');
+      } catch (err) {
+        visitorReplies = [];
+      }
+
+      function renderVisitorReplies() {
+        dynamicContainer.innerHTML = '';
+        visitorReplies.forEach(function(item) {
+          const article = document.createElement('article');
+          article.className = 'reply-post';
+          article.id = 'post-' + item.id;
+          article.setAttribute('data-post-id', item.id);
+
+          // Greentext conversion
+          const formattedComment = item.comment.split('\n').map(function(line) {
+            const trimmed = line.trim();
+            if (trimmed.startsWith('&gt;') || trimmed.startsWith('>')) {
+              return '<span class="greentext">' + escapeHTML(trimmed) + '</span>';
+            } else if (trimmed.startsWith('&gt;&gt;') || trimmed.startsWith('>>')) {
+              const targetNum = trimmed.replace(/^[&gt;>]+/, '');
+              return '<a href="#post-' + targetNum + '" class="quote-link" data-preview="' + targetNum + '">' + escapeHTML(trimmed) + '</a>';
+            }
+            return escapeHTML(line);
+          }).join('<br />');
+
+          article.innerHTML = `
+            <div class="post-header">
+              <input type="checkbox" title="Select post" />
+              <span class="post-subject">${escapeHTML(item.subject || 'Visitor Comment')}</span>
+              <span class="post-author">${escapeHTML(item.name || 'Anonymous')}</span>
+              <span class="post-tripcode">!visitor</span>
+              <span class="post-date">${escapeHTML(item.date)}</span>
+              <a href="#post-${item.id}" class="post-num">No. ${item.id}</a>
+              <button type="button" class="quote-btn text-xs text-blue-600 hover:underline" data-quote="${item.id}">[Reply]</button>
+            </div>
+            <div class="post-content">
+              <div>${formattedComment}</div>
+            </div>
+          `;
+          dynamicContainer.appendChild(article);
+        });
+
+        setupQuoteHover(dynamicContainer);
+        setupQuoteButtons(dynamicContainer);
+      }
+
+      function escapeHTML(str) {
+        return str.replace(/[&<>'"]/g, 
+          tag => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            "'": '&#39;',
+            '"': '&quot;'
+          }[tag] || tag)
+        );
+      }
+
+      function createVisitorPost(name, subject, comment) {
+        const nextId = 4861820 + visitorReplies.length;
+        const now = new Date();
+        const dateStr = (now.getMonth() + 1).toString().padStart(2, '0') + '/' +
+                        now.getDate().toString().padStart(2, '0') + '/' +
+                        now.getFullYear().toString().slice(-2) + ' ' +
+                        now.getHours().toString().padStart(2, '0') + ':' +
+                        now.getMinutes().toString().padStart(2, '0') + ':' +
+                        now.getSeconds().toString().padStart(2, '0');
+
+        const newPost = {
+          id: nextId,
+          name: name.trim() || 'Anonymous',
+          subject: subject.trim() || 'Visitor Message',
+          comment: comment.trim(),
+          date: dateStr
+        };
+
+        visitorReplies.push(newPost);
+        localStorage.setItem('manit_visitor_replies', JSON.stringify(visitorReplies));
+        renderVisitorReplies();
+        playSound('post');
+
+        const newElem = document.getElementById('post-' + nextId);
+        if (newElem) {
+          newElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          highlightPost(newElem);
+        }
+      }
+
+      // Inline bottom form submit
+      const inlineForm = document.getElementById('inline-reply-form');
+      inlineForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('reply-name-input').value;
+        const subject = document.getElementById('reply-subject-input').value;
+        const comment = document.getElementById('reply-comment-input').value;
+        if (!comment.trim()) return;
+
+        createVisitorPost(name, subject, comment);
+        inlineForm.reset();
+      });
+
+      // Floating QR submit
+      const floatingForm = document.getElementById('floating-qr-form');
+      floatingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('floating-name').value;
+        const subject = document.getElementById('floating-subject').value;
+        const comment = document.getElementById('floating-comment').value;
+        if (!comment.trim()) return;
+
+        createVisitorPost(name, subject, comment);
+        floatingForm.reset();
+        floatingQr.classList.remove('is-open');
+      });
+
+      // Direct Mailto triggers
+      document.getElementById('mailto-direct-btn').addEventListener('click', function() {
+        const subject = encodeURIComponent(document.getElementById('reply-subject-input').value || 'Portfolio Inquiry');
+        const comment = encodeURIComponent(document.getElementById('reply-comment-input').value || 'Hello Manit,');
+        window.location.href = 'mailto:manit17102006@gmail.com?subject=' + subject + '&body=' + comment;
+      });
+
+      document.getElementById('floating-email-btn').addEventListener('click', function() {
+        const subject = encodeURIComponent(document.getElementById('floating-subject').value || 'Portfolio Inquiry');
+        const comment = encodeURIComponent(document.getElementById('floating-comment').value || 'Hello Manit,');
+        window.location.href = 'mailto:manit17102006@gmail.com?subject=' + subject + '&body=' + comment;
+      });
+
+      renderVisitorReplies();
+
+    })();
+  </script>
+</body>
+</html>

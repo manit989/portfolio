@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+	\textbf{\Huge \scshape Manit Kumar} \\ \vspace{1pt}
+	\small 8800-688-629 $|$ \href{mailto:manit17102006@gmail.com}{\underline{manit17102006@gmail.com}} $|$
+	\href{https://www.linkedin.com/in/manit-kumar-a0a725325/}{\underline{linkedin.com/manit-kumar}} $|$
+	\href{https://github.com/manit989}{\underline{github.com/manit989}} $|$
+	\href{https://codolio.com/profile/anonusetux}{\underline{codolio.com/anonusetux}}
+\end{center}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Indian Army}{June 2026 -- August 2026}
+{Intern}{Delhi Cantt.}
+\resumeItemListStart
+\resumeItem{Engineered a fully local RAG system using \textbf{FAISS} and \textbf{HuggingFace} embeddings (all-MiniLM-L6-v2), cutting diagnostic manual lookup time by 90\% with 100\% offline capability.}
+\resumeItem{Architected an AI diagnostic pipeline using \textbf{LangChain} to bridge edge-deployed predictive maintenance models (XGBoost/Random Forest) with a generative AI reporting system.}
+\resumeItem{Integrated LLMs (\textbf{Gemini/Ollama}) to translate complex mechanical fault codes into actionable, plain-English Situation Reports (SITREPs) for tank operators.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Guru Gobind Singh Indraprastha University}{Delhi, India}
+{Bachelor of Technology in Computer Science (CGPA: \textbf{9.0 / 10.0})}{Aug. 2024 -- Present}
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/manit989/FrameIQ-minimal}{\textbf{FrameIQ: Multimodal Semantic Video Search Engine}} $|$ \emph{FastAPI, LanceDB, Groq LPU, Gemini Flash, FFmpeg}}{Sep. 2026}
+\resumeItemListStart
+\resumeItem{Engineered a cross-modal Video-RAG search engine using \textbf{FastAPI} and \textbf{LanceDB} for moment-level semantic retrieval of short-form videos without captions or tags.}
+\resumeItem{Architected a dual-stream ingestion pipeline using \textbf{Groq Whisper API} for audio tokenization and \textbf{Gemini Flash} for visual scene decomposition, enforcing strict \textbf{Pydantic} schemas to prevent JSON hallucinations.}
+\resumeItem{Implemented zero-copy columnar indexing with \textbf{LanceDB} and Gemini embeddings for sub-millisecond cosine similarity searches, returning precise timestamps and on-the-fly \textbf{FFmpeg} thumbnails.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\href{https://github.com/manit989/scaleguard-api}{\textbf{ScaleGuard: Distributed Auth \& Rate-Limiting API}} $|$ \emph{FastAPI, Redis, PostgreSQL, Nginx, Docker}}{Feb. 2026}
+\resumeItemListStart
+\resumeItem{Developed a distributed backend system using \textbf{FastAPI} and \textbf{Nginx}, scaling across multiple replicas to handle high-concurrency traffic via load balancing.}
+\resumeItem{Engineered an atomic \textbf{Token Bucket Rate Limiter} using \textbf{Redis Lua scripting}, ensuring thread-safe operations and preventing race conditions across distributed nodes.}
+\resumeItem{Implemented stateless \textbf{JWT} authentication with \textbf{Alembic} migrations; orchestrated a 4-service stack via \textbf{Docker Compose} and validated rate limits using \textbf{Locust}.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://unstop.com/hackathons/azinhack-2026-university-school-of-automation-robotics-usar-guru-gobind-singh-indraprastha-university-ggsipu--1763832}{\textbf{1st Runner-Up -- AzinHack 2026}} $|$ \emph{USAR, GGSIPU} $|$ \href{https://github.com/Yashvardhan0904/Tinyfah}{\underline{GitHub}} $|$ \href{https://tinyfah.vercel.app/}{\underline{Live Demo}}}{Oct. 2026}
+\resumeItemListStart
+\resumeItem{Secured \textbf{2nd place} out of \textbf{250+ teams} in a 24-hour AI hackathon by building \textbf{Tinyfah}, an autonomous web vulnerability analysis agent using \textbf{LangGraph} and the \textbf{TinyFish API} to audit web apps against \textbf{345 OWASP ASVS v5.0.0} checks.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Google Cloud Skills Boost Profile} $|$ \emph{Diamond League (3337+ points)}}{}
+\resumeItemListStart
+\resumeItem{Completed hands-on cloud infrastructure badges including \textbf{Monitoring in Google Cloud}, \textbf{Cloud Speech API}, \textbf{App Engine}, and \textbf{Cloud Run Functions}.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------COMPETITIVE PROGRAMMING-----------
+\section{Competitive Programming \& DSA}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Algorithmic Problem Solving} $|$ \emph{LeetCode, Codeforces, AtCoder}}{}
+\resumeItemListStart
+\resumeItem{\textbf{LeetCode:} Solved \textbf{486} DSA problems (308 Medium, 45 Hard) with a Max Rating of \textbf{1815}; competed in \textbf{56} total contests across platforms (Max Rating \textbf{927} on AtCoder).}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	      \textbf{Languages}{: Python, SQL, C/C++, Java, JavaScript, Lua, R} \\
+	      \textbf{Backend Frameworks}{: FastAPI, Flask, Pydantic, SQLAlchemy, Alembic} \\
+	      \textbf{Data Science/ML}{: LangChain, LangGraph, HuggingFace, NumPy, Pandas, Matplotlib} \\
+	      \textbf{Database \& Infrastructure}{: PostgreSQL, Redis, Docker, Nginx, Git} \\
+	      \textbf{Developer Tools}{: Neovim, Linux, Google Cloud Platform, Postman}
+	      }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
